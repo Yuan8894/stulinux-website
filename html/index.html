@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站管理后台</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        h1 { font-size: 26px; color: #2c3e50; border-bottom: 2px solid #eaeaea; padding-bottom: 15px; margin-bottom: 20px;}
+        h2 { font-size: 18px; color: #34495e; margin-top: 25px; }
+        p { margin-bottom: 15px; color: #555; }
+        .tag { display: inline-block; background: #e1ecf4; color: #39739d; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+        
+        /* 👇 新增的按钮样式 👇 */
+        .btn {
+            display: inline-block;
+            background-color: #3498db; /* 稳重的蓝色 */
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9; /* 鼠标悬停变深色 */
+            color: white;
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #343a40;
+            color: #adb5bd;
+            font-size: 13px;
+            margin-top: auto;
+        }
+        footer a { color: #adb5bd; text-decoration: none; border-bottom: 1px dotted #adb5bd; }
+        footer a:hover { color: #fff; border-bottom: 1px solid #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>网站管理后台 - 个人Linux学习笔记</h1>
+        
+        <p>这里是我用于实践和运行 Linux Web 服务技术的个人实验站。本网站主要用于：</p>
+        
+        <ul>
+            <li>记录 Debian/CentOS 系统运维的学习过程</li>
+            <li>测试 Nginx 与 Docker 容器化部署技术</li>
+            <li>分享个人在网络安全与服务器管理方面的笔记</li>
+        </ul>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="/notes/" class="btn">📂 阅读我的运维笔记 (Docsify)</a>
+        </div>
+
+        <h2>当前运行环境</h2>
+        <p>
+            <span class="tag">Debian 12</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Docker</span>
+            <span class="tag">SSL Secure</span>
+        </p>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #999;">
+            * 本站内容仅包含个人技术学习记录，不涉及任何企业、商业或非个人性质的交互式服务。
+        </p>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2026</p>
+        <p>
+            <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025064569号-1</a>
+        </p>
+    </footer>
+
+</body>
+</html>
